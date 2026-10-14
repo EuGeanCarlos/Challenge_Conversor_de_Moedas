@@ -48,3 +48,7 @@ Protótipo / projeto de estudo em desenvolvimento. A descrição acima distingue
 [GitHub](https://github.com/EuGeanCarlos)
 
 Licenças, autoria compartilhada e atribuições existentes no código e nos materiais originais permanecem aplicáveis.
+
+## Validação desta auditoria — 14/10/2026
+
+Sem publicação nova confirmada. Compilação e execução aprovadas: opção 1 e valor 10 usam taxa simulada 1,23, retornando 12,30 USD. Não há consulta real de câmbio.
