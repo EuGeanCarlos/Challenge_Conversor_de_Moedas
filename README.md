@@ -1,94 +1,50 @@
-💱 Conversor de Moedas em Java (Console)
+# Conversor de moedas — protótipo de console
 
-Projeto desenvolvido como parte do Praticando Java: Challenge Conversor de Moedas, da Alura, em parceria com o programa Oracle Next Education (ONE).
+Menu Java com seis pares BRL/USD/EUR/GBP e validação de entradas. Usa taxa fixa simulada de 1,23; não consulta API nem fornece cotações reais.
 
-O desafio tem como objetivo consolidar conhecimentos em Java, Programação Orientada a Objetos, consumo de API externa, manipulação de JSON e boas práticas de versionamento com Git/GitHub.
+## Tecnologias
 
-🎯 Objetivo do Projeto
+- Java
+- Scanner
 
-Construir uma aplicação em Java que funcione como um conversor de moedas, com interação via console, permitindo ao usuário escolher entre diferentes opções de conversão e obter valores atualizados em tempo real.
+## Funcionalidades e utilização
 
-Este projeto faz parte do módulo Praticando Java, cujo foco é o aprendizado prático por meio da construção de um sistema_toggle realista e funcional.
+Escolha 1 e informe 10: a simulação produz 12,30 USD. Digite 0 para sair.
 
-🌍 Contexto do Challenge
+## Como executar
 
-O Praticando Java: Challenge Conversor de Moedas simula um cenário comum em um mundo globalizado, onde conversões de moedas são necessárias para:
+```bash
+git clone https://github.com/EuGeanCarlos/Challenge_Conversor_de_Moedas.git
+cd Challenge_Conversor_de_Moedas
+javac -encoding UTF-8 -d out src/Main.java
+java -cp out Main
+```
 
-Compras internacionais
+Requer JDK 17 ou superior. Os exercícios executam no terminal.
 
-Freelancers que recebem em moedas estrangeiras
+## Demonstração e publicação
 
-Viagens e planejamento financeiro
+Execução local. Nenhuma demonstração nova foi confirmada nesta etapa.
 
-Plataformas e sites internacionais
+GitHub Pages hospeda arquivos estáticos e não executa Java, Node.js, PHP ou Python. As dependências de servidor deste projeto devem ser executadas em ambiente apropriado.
 
-O sistema foi desenvolvido para reforçar a importância da prática contínua no processo de aprendizado em programação.
+## Estrutura versionada
 
-⚙️ Funcionalidades
+```text
+.gitignore
+Challenge_Conversor_de_Moedas.iml
+README.md
+src/Main.java
+```
 
-Menu interativo via console
+## Status
 
-Conversão de moedas com dados em tempo real
+Protótipo / projeto de estudo em desenvolvimento. A descrição acima distingue o que está implementado das dependências ou etapas pendentes.
 
-Mínimo de 6 opções de conversão, incluindo:
+## Autor e créditos
 
-BRL → USD
+**Gean Carlos** — estudante de Engenharia de Computação, UEMA.
 
-USD → BRL
+[GitHub](https://github.com/EuGeanCarlos)
 
-BRL → EUR
-
-EUR → BRL
-
-BRL → GBP
-
-GBP → BRL
-
-Consumo de API externa de câmbio
-
-Desserialização de dados JSON utilizando Gson
-
-Tratamento de entradas inválidas
-
-Estrutura organizada seguindo Orientação a Objetos
-
-🛠️ Tecnologias Utilizadas
-
-Java (JDK 11 ou superior)
-
-Programação Orientada a Objetos (POO)
-
-Exchange Rate API (plano gratuito)
-
-Gson
-
-HTTP Client (java.net.http)
-
-Git & GitHub
-
-Trello (organização do desenvolvimento)
-
-🔌 API Utilizada
-
-O projeto utiliza a Exchange Rate API para obter cotações de moedas em tempo real.
-
-Exemplo de endpoint:
-https://v6.exchangerate-api.com/v6/SUA_API_KEY/pair/USD/BRL/100
-
-
-⚠️ Importante:
-A chave da API (API Key) deve ser gerada gratuitamente no site oficial e não deve ser versionada no repositório.
-
-📦 Estrutura do Projeto
-src/
- ├── app/
- │   └── Main.java
- ├── menu/
- │   └── Menu.java
- ├── service/
- │   ├── CurrencyConverterService.java
- │   └── ExchangeRateClient.java
- ├── model/
- │   └── ExchangeRateResponse.java
- ├── util/
- │   └── InputValidator.java
+Licenças, autoria compartilhada e atribuições existentes no código e nos materiais originais permanecem aplicáveis.
